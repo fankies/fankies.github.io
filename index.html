@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<title>Document</title>
+	</head>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #E6E6FA;
+			font-family: 微軟正黑體;
+		}
+		.logo{
+			width: 50px;
+			height: 50px;
+			background-image: url('img/logo.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		.color{
+			background-color: #4B0082!important;
+		}
+		.bg{
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			margin-bottom: 15px;
+		}
+		.bg1{
+			background-position: 60% 50%;
+			background-image: url('http://new-cloudfront.zekkei-japan.jp/images/articles/c34ca50f2d11c2486a79c6457f710059.jpg');
+		}
+		.bg2{
+			background-image: url('https://i.ytimg.com/vi/bfxy8j9Y6nY/maxresdefault.jpg');
+		}
+		.bg3{
+			background-image: url('http://new-cloudfront.zekkei-japan.jp/images/articles/8ea9f45d180e01e22572cb7609ea4823.jpg');
+		}
+		.img-size{
+			height: 250px;
+			margin-top: 30px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 60% 50%;
+		}
+		.img-size:hover{
+			display: block;
+		}
+		.img1{
+			background-image: url('img/Purple-1.jpg');
+		}
+		.img2{
+			background-image: url('img/Purple-2.jpg');
+		}
+		.img3{
+			background-image: url('img/Purple-3.jpg');
+		}
+		.img4{
+			background-image: url('img/Purple-4.jpg');
+		}
+		.img5{
+			background-image: url('img/Purple-5.jpg');
+		}
+		.img6{
+			background-image: url('img/Purple-6.jpg');
+		}
+		.img7{
+			background-image: url('http://blog.accupass.com/wp-content/uploads/2017/07/32425666143_43a4f4ec62_k.jpg');
+		}
+		.img8{
+			background-image: url('https://www.bomb01.com/upload/news/original/5c915c9bde6e98cf9373961abee2120e.jpg');
+		}
+		.footer{
+			width: 100%;
+			height: 50px;
+			background-color: #4B0082;
+			margin-top: 30px;
+		}
+		.footer>p{
+			line-height: 50px;
+			text-align: center;
+			color: #FFF;
+			font-family: 微軟正黑體;
+			font-size: 20px;
+		}
+	</style>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark color">
+			<a class="logo navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">關於 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">朋友</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							相片
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">歷年照片</a>
+							<a class="dropdown-item" href="#">有你的照片</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">這不知道要打什麼好</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">更多</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="尋找自我" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+				</form>
+			</div>
+		</nav>
+		<div class="container-fluild">
+			<!-- 輪播圖 -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="bg bg1 carousel-item active"></div>
+					<div class="bg bg2 carousel-item"></div>
+					<div class="bg bg3 carousel-item"></div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img1"></div></div>
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img2"></div></div>
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img3"></div></div>
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img4"></div></div>
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img5"></div></div>
+				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img6"></div></div>
+			</div>
+			<div class="row">
+				<div class="col-sm col-lg-4"><div class="img-size img-left img7"></div></div>
+				<div class="col-sm col-lg-8"><div class="img-size img-right img8"></div></div>
+			</div>
+		</div>
+		<div class="footer">
+			<P>23-李佳軒</P>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script>
+			$('.carousel').carousel({
+			  interval: 2000,
+			  pause:"false",
+			})
+		</script>
+	</body>
+</html>
