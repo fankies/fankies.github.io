@@ -64,6 +64,10 @@ nav {
     border-top: 1px solid white;
 }
 
+.menu_top_ul_li_1>a {
+    text-decoration: none;
+}
+
 .menu_top_ul_li>a {
     text-decoration: none;
 }
@@ -417,6 +421,9 @@ nav {
 }
 
 @media screen and (max-width:520px) {
+    .menu_top_ul{
+        right: 5px;
+    }
     .container {
         width: 90%;
         margin: 0 auto;
@@ -463,7 +470,6 @@ nav {
         margin-top: 30px;
         margin-bottom: 0;
     }
-
     .article_L_img {
         width: 100%;
         margin: 0 0 25px 0;
