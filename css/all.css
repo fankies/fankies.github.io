@@ -421,10 +421,6 @@ nav {
 }
 
 @media screen and (max-width:520px) {
-    .menu_top{
-        z-index: 999;
-    }
-
     .menu_top_ul{
         right: 5px;
     }
