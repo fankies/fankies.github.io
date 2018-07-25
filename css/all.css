@@ -41,6 +41,9 @@ nav {
 .menu_top:hover .menu_top_ul {
     display: inline;
 }
+.menu_top_ul.open{
+    display: inline;
+}
 
 .menu_top_ul {
     background-color: #00618B;
