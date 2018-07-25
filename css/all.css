@@ -30,6 +30,7 @@ nav {
     position: fixed;
     top: 20px;
     right: calc(20% - 50px);
+    z-index: 999999999;
 }
 
 .menu {
