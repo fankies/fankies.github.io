@@ -30,6 +30,7 @@ nav {
     position: fixed;
     top: 20px;
     right: calc(20% - 50px);
+    z-index: 999;
 }
 
 .menu {
@@ -421,9 +422,6 @@ nav {
 }
 
 @media screen and (max-width:520px) {
-    .menu_top{
-        z-index: 3;
-    }
     .menu_top_ul{
         right: 5px;
     }
