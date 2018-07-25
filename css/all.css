@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "Microsoft JhengHei";
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* navbar */
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.menu_top {
+    background-image: url("../img/01-nav/menu_top-01.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    right: calc(20% - 50px);
+}
+
+.menu {
+    width: 120px;
+    height: 107px;
+}
+
+.menu_top:hover .menu_top_ul {
+    display: inline;
+}
+
+.menu_top_ul {
+    background-color: #00618B;
+    opacity: 0.8;
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu_top_ul>li {
+    font-size: 16px;
+    color: #FFF;
+    padding: 2px 5px;
+}
+
+.menu_top_ul_li {
+    border-top: 1px solid white;
+}
+
+.menu_top_ul_li>a {
+    text-decoration: none;
+}
+
+.menu_top_ul_li_padding1 {
+    color: white;
+    padding-right: 45px;
+}
+
+.menu_top_ul_li_padding2 {
+    color: white;
+    padding-right: 45px;
+}
+
+.menu_top_ul_li_padding3 {
+    color: white;
+    padding-right: 30px;
+}
+
+.menu_top_ul_li_padding4 {
+    color: white;
+    padding-right: 5px;
+}
+
+.logo {
+    background-image: url("../img/01-nav/logo.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    float: left;
+}
+
+.containerfull {
+    width: 100%;
+    position: relative;
+}
+
+/* 背景圖 */
+
+.background {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url("../img/02-slider/background-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+}
+
+/* 最近消息 */
+
+.new {
+    position: absolute;
+    bottom: 30px;
+    left: calc((100% - 350px)/2);
+    text-align: center;
+    color: #00618B;
+}
+
+.new_content {
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+/* 品牌故事 */
+
+.story {
+    width: 100%;
+    background-color: #06669A;
+    padding: 50px 0;
+}
+
+.story_img {
+    width: 50%;
+    float: left;
+}
+
+.story_img_in {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 90%;
+}
+
+.story_text {
+    width: calc((100% - 30px)/2);
+    float: left;
+    color: #FFF;
+}
+
+.story_title {
+    margin-top: 0;
+}
+
+.story_content {
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* 熱銷產品 */
+
+.container_title {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#product {
+    padding: 30px 100px;
+}
+
+.product_in {
+    border: 1px solid #DDD;
+}
+
+.product_size {
+    width: 100%;
+}
+
+.card_text_size {
+    border-top: 1px solid #DDD;
+}
+
+.swiper-button {
+    padding-top: 100px;
+}
+
+.card_text_size {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* 推薦影片 */
+
+.film_all {
+    width: 100%;
+    background-color: #06669A;
+}
+
+.film_title {
+    text-align: center;
+    margin: 30px auto;
+    padding-top: 30px;
+    color: #FFF;
+}
+
+.film {
+    width: 100%;
+    height: 800px;
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+
+/* 推薦文 */
+
+.article {
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.article_title {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.article_L {
+    width: calc((100% - 30px)/2);
+    height: 300px;
+    margin-right: 25px;
+    float: left;
+}
+
+.article_L_text {
+    margin-top: 25px;
+}
+
+.article_L_img {
+    background-image: url("../img/05-section_3/使用心得-1.jpg");
+    width: calc((100% - 10px)/2.5);
+    height: 250px;
+    margin: 25px 10px 25px 10px;
+    background-position: 65% 50%;
+    float: left;
+}
+
+.article_R {
+    width: calc((100% - 30px)/2);
+    height: 300px;
+    float: left;
+}
+
+.article_R_text {
+    margin-top: 25px;
+}
+
+.article_R_img {
+    background-image: url("../img/05-section_3/使用心得-2.jpg");
+    width: calc((100% - 10px)/2.5);
+    height: 250px;
+    margin: 25px 10px 25px 10px;
+    background-position: 65% 50%;
+    float: left;
+}
+
+/* Q&A */
+
+.QA_title {
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color: #06669A;
+}
+
+.wrap {
+    background-color: #06669A;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.collapse {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    max-height: 40px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.collapse * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.collapse.active {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    z-index: 200;
+    color: #444;
+    max-height: 3000px;
+    padding: 10px 20px;
+    margin: 10px -10px;
+    transition: all 0.2s, max-height 4.8s;
+}
+
+.collapse h2 {
+    font-size: 18px;
+    line-height: 20px;
+    position: relative
+}
+
+.transparent {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    margin: 0px !important;
+    padding: 10px !important
+}
+
+.collapse h2::after {
+    content: "+";
+    text-align: center;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.5;
+    right: 0;
+    top: 0;
+}
+
+.collapse:hover h2::after {
+    opacity: 1
+}
+
+.collapse.active h2::after {
+    content: "-";
+}
+
+/* footer */
+
+.footer {
+    background-color: #AAA;
+    width: 100%;
+    float: left;
+}
+
+.footer_float {
+    float: left;
+    padding: 30px 50px;
+    color: #444;
+}
+
+.footer_img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px 0 0;
+    float: left;
+}
+
+.Q_A_a {
+    display: block;
+    color: #444;
+}
+
+/* RWD的世界來了~~~冏 */
+
+@media screen and (max-width:1280px) {
+    #product {
+        padding: 0;
+    }
+    .film {
+        margin: 0;
+    }
+    .footer_float {
+        padding: 30px 40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .film {
+        width: 100%;
+        height: 500px;
+    }
+    .article_L {
+        float: none;
+        width: 100%;
+    }
+    .article_R {
+        float: none;
+        width: 100%;
+    }
+    .article_L_img {
+        margin: 0 10px 25px 10px;
+    }
+    .article_R_img {
+        margin: 0 10px 25px 10px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .background {
+        background-image: url("../img/02-slider/background-phone-01.jpg");
+        background-position-x: 55%;
+        width: 100%;
+        height: 400px;
+    }
+    .logo {
+        top: 30px;
+        left: 20px;
+    }
+    /* 最新消息 */
+    .new {
+        margin: 0 45px;
+        font-size: 12px;
+    }
+    .new_title {
+        font-size: 16px;
+    }
+    /* 品牌故事 */
+    .story_img {
+        width: 100%;
+    }
+    .story_img_in {
+        width: 100%;
+    }
+    .story_text {
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* 影片 */
+    .film_title {
+        padding: 0;
+    }
+    .film {
+        width: 100%;
+        height: 220px;
+    }
+    /* 文章 */
+    .article_title {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .article_L_img {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+    .article_R_img {
+        margin: 140px 0 25px 0;
+        width: 100%;
+    }
+    /* QA */
+    .QA {
+        margin-top: 180px;
+        float: left;
+    }
+    /* footer */
+    .footer_float {
+        padding: 0 15px 15px 0;
+    }
+}

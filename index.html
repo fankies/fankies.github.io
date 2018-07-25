@@ -1,176 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<title>Document</title>
-	</head>
-	<style>
-		body{
-			margin: 0;
-			padding: 0;
-			background-color: #E6E6FA;
-			font-family: 微軟正黑體;
-		}
-		.logo{
-			width: 50px;
-			height: 50px;
-			background-image: url('img/logo.png');
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
-		}
-		.color{
-			background-color: #4B0082!important;
-		}
-		.bg{
-			width: 100%;
-			height: 600px;
-			background-size: cover;
-			margin-bottom: 15px;
-		}
-		.bg1{
-			background-position: 60% 50%;
-			background-image: url('http://new-cloudfront.zekkei-japan.jp/images/articles/c34ca50f2d11c2486a79c6457f710059.jpg');
-		}
-		.bg2{
-			background-image: url('https://i.ytimg.com/vi/bfxy8j9Y6nY/maxresdefault.jpg');
-		}
-		.bg3{
-			background-image: url('http://new-cloudfront.zekkei-japan.jp/images/articles/8ea9f45d180e01e22572cb7609ea4823.jpg');
-		}
-		.img-size{
-			height: 250px;
-			margin-top: 30px;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: 60% 50%;
-		}
-		.img-size:hover{
-			display: block;
-		}
-		.img1{
-			background-image: url('img/Purple-1.jpg');
-		}
-		.img2{
-			background-image: url('img/Purple-2.jpg');
-		}
-		.img3{
-			background-image: url('img/Purple-3.jpg');
-		}
-		.img4{
-			background-image: url('img/Purple-4.jpg');
-		}
-		.img5{
-			background-image: url('img/Purple-5.jpg');
-		}
-		.img6{
-			background-image: url('img/Purple-6.jpg');
-		}
-		.img7{
-			background-image: url('http://blog.accupass.com/wp-content/uploads/2017/07/32425666143_43a4f4ec62_k.jpg');
-		}
-		.img8{
-			background-image: url('https://www.bomb01.com/upload/news/original/5c915c9bde6e98cf9373961abee2120e.jpg');
-		}
-		.footer{
-			width: 100%;
-			height: 50px;
-			background-color: #4B0082;
-			margin-top: 30px;
-		}
-		.footer>p{
-			line-height: 50px;
-			text-align: center;
-			color: #FFF;
-			font-family: 微軟正黑體;
-			font-size: 20px;
-		}
-	</style>
-	<body>
-		<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark color">
-			<a class="logo navbar-brand" href="#"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">關於 <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">朋友</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							相片
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">歷年照片</a>
-							<a class="dropdown-item" href="#">有你的照片</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">這不知道要打什麼好</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">更多</a>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="尋找自我" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
-				</form>
-			</div>
-		</nav>
-		<div class="container-fluild">
-			<!-- 輪播圖 -->
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="bg bg1 carousel-item active"></div>
-					<div class="bg bg2 carousel-item"></div>
-					<div class="bg bg3 carousel-item"></div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img1"></div></div>
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img2"></div></div>
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img3"></div></div>
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img4"></div></div>
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img5"></div></div>
-				<div class="col-sm-6 col-lg-4 col-md-6"><div class="img-size img6"></div></div>
-			</div>
-			<div class="row">
-				<div class="col-sm col-lg-4"><div class="img-size img-left img7"></div></div>
-				<div class="col-sm col-lg-8"><div class="img-size img-right img8"></div></div>
-			</div>
-		</div>
-		<div class="footer">
-			<P>23-李佳軒</P>
-		</div>
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script>
-			$('.carousel').carousel({
-			  interval: 2000,
-			  pause:"false",
-			})
-		</script>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr.HUANG</title>
+
+    <!-- jquery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <style type="text/css">
+        #accordion {
+            font-size: 50%;
+        }
+    </style>
+    <!-- wave -->
+    <link rel="stylesheet" href="/css/wave.css">
+    <!-- 手刻css -->
+    <link rel="stylesheet" href="/css/all.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo" id="logo"></div>
+            <div>
+                <div class="menu_top">
+                    <div class="menu">
+                        <ul class="menu_top_ul">
+                            <li>
+                                <a href="#story" class="menu_top_ul_li_padding1">品牌故事</a>
+                            </li>
+                            <li class="menu_top_ul_li">
+                                <a href="#product" class="menu_top_ul_li_padding2">熱銷產品</a>
+                            </li>
+                            <li class="menu_top_ul_li">
+                                <a href="#film" class="menu_top_ul_li_padding3">部落客推薦</a>
+                            </li>
+                            <li class="menu_top_ul_li">
+                                <a href="#article" class="menu_top_ul_li_padding4">其他人怎麼說?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 水波 -->
+    <div class="containerfull">
+        <div class="background"></div>
+        <div class="wave_hidden">
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop" style="background-image: url('img/02-slider/wave-1-01.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url('img/02-slider/wave-1-01.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url('img/02-slider/wave-1-01.png')"></div>
+                </div>
+                <!-- 最新消息 -->
+                <div class="new">
+                    <h3 class="new_title">│ 最新消息 │</h3>
+                    <span class="new_content">夏日特快報!!全館滿$799就送 全方位清透防曬乳!!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 品牌故事 -->
+    <div class="story" id="story">
+        <div class="container">
+            <div class="story_img">
+                <img class="story_img_in" src="img/03-section_1_story/舒敏全系列.jpg" alt="">
+            </div>
+            <div class="story_text">
+                <h3 class="story_title">│ 品牌故事 │</h3>
+                <span class="story_content">Dr. HUANG致力提供「創新、有效、溫和、不生粉刺」的醫學美容保養配方，產品皆經專業人員臨床驗證，並 以親民的價格讓消費者隨時享有嚴謹、專業、安全的醫學美容保養品。
+                    <br> Dr. HUANG是黃醫師多年累積創新的研發, 針對東方肌膚的問題, 給肌膚最好的選擇和呵護。黃禎憲將一生對肌 膚的鑽研心得，帶領、指導健耀生醫的產品開發團隊及臨床驗證群，相信Dr.HUANG是您肌膚保養,
+                    最物超所值 的選擇。
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!-- 產品 -->
+    <div class="container">
+        <h3 class="container_title">│ 熱銷產品 │</h3>
+        <div id="product">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/Dr.HUANG  全方位水漾修飾防曬乳 30ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>全方位水漾修飾防曬乳 30ml</b>
+                                </h4>
+                                <p>NT$ 638
+                                    <s>NT$ 750</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/Dr.HUANG  全方位清透防曬乳SPF50 30ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>全方位清透防曬乳SPF50 30ml</b>
+                                </h4>
+                                <p>NT$ 510
+                                    <s>NT$ 600</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/Dr.HUANG  肌本柔潤保濕露200ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>肌本柔潤保濕露 200ml</b>
+                                </h4>
+                                <p>NT$ 493
+                                    <s>NT$ 580</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/DrHUANG  控油清潔洗面慕絲 150ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>控油清潔洗面慕絲 150ml</b>
+                                </h4>
+                                <p>NT$ 510
+                                    <s>NT$ 600</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/DrHUANG  控油調理化妝水 150ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>控油調理化妝水 150ml</b>
+                                </h4>
+                                <p>NT$ 425
+                                    <s>NT$ 500</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide product_in">
+                        <div class="card">
+                            <img class="product_size" src="/img/04-section_2_product/DrHUANG  肌本彈潤潔顏乳120ml.jpg" alt="Avatar">
+                            <div class="container card_text_size">
+                                <h4>
+                                    <b>肌本彈潤潔顏乳 120ml</b>
+                                </h4>
+                                <p>NT$ 417
+                                    <s>NT$ 490</s>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 影片 -->
+    <div class="film_all" id="film">
+        <div class="container">
+            <h3 class="film_title">│ 部落客推薦 │</h3>
+            <div>
+                <iframe class="film" src="https://www.youtube.com/embed/mV0Iuhe-pgo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- 推薦文章 -->
+    <div class="article" id="article">
+        <div class="container">
+            <h3 class="article_title">│ 其他人怎麼說? │</h3>
+            <div class="article_L">
+                <div class="article_L_img"></div>
+                <div class="article_L_text">
+                    <h4>
+                        <b>從小看到大的皮膚科出保養品了!</b>
+                    </h4>
+                    <p>這次收到這個試用品讓我會心一笑，原來是我從小看到大的，著名夜間門診皮膚科，黃禎憲出的保養品耶～Dr.HUANG保養品，我喜歡的地方在，無添加香料，無酒精、無人工色素，所以就是算肌膚很過敏的人也可以用!
+                    </p>
+                </div>
+            </div>
+
+            <div class="article_R">
+                <div class="article_R_img"></div>
+                <div class="article_R_text">
+                    <h4>
+                        <b>肌本活潤水乳液試用YA!</b>
+                    </h4>
+                    <p>極度排斥黏膩感的可以嘗試這個看看~ 而且吸收也很快，我有試過單擦他一天，也是滿保濕的，但當然沒有你三個步驟做滿來的好，但就乳液而言，不悶不致粉刺又有清爽感又保濕這點，就讓我好喜歡，這瓶也一樣沒有任何過敏泛紅反應，所以Dr.HUANG我覺得滿適合在肌膚修護期使用，不刺激又溫和^3^
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q&A摺疊 -->
+    <div class="container">
+        <div class="QA">
+            <h3 class="QA_title" id="Q_A">│ 常見問題 │</h3>
+            <div class="wrap">
+                <div class="collapse transparent">
+                    <h2>Q.忘記密碼怎麼辦？</h2>
+                    A.若您忘記密碼，請進入「會員中心」或「登入/註冊」後，點選「忘記密碼」 再輸入註冊的電子郵件與手機號碼，系統即會寄送密碼重設通知函至您預設的Email信箱中，請您收取郵件並點擊內文中的連結進行密碼重設即可。
+                </div>
+                <div class="collapse transparent">
+                    <h2>Q.退換貨如何處理？</h2>
+                    A.若收到的商品有瑕疵，請於線上辦理退貨，建議您收到商品後儘速檢查商品狀況，如有瑕疵可於7天內免運費退貨。 7天鑑賞期後，請與客服中心聯絡，提供商品瑕疵資料，判定商品瑕疵後，我們將派專員取回您的瑕疵商品(免運費)，且為您辦理退款。
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_1 footer_float">
+                <h3>NEED HELP?</h3>
+                <div> 0800-000-000 </div>
+                <div> Mon-Fri(例假日除外) </div>
+                <div> 9.00am - 5.30pm </div>
+            </div>
+            <div class="footer_2 footer_float">
+                <h3>Dr.HUANG</h3>
+                <a href="#story" class="Q_A_a" style="text-decoration:none;display: block;">關於我們</a>
+                <a href="#Q_A" class="Q_A_a" style="text-decoration:none;display: block;">忘記密碼</a>
+                <a href="#Q_A" class="Q_A_a" style="text-decoration:none;display: block;">退換貨申請</a>
+            </div>
+            <div class="footer_3 footer_float">
+                <h3>FOLLOW US</h3>
+                <img class="footer_img" src="/img/07-footer/facebook-logo-in-circular-button-outlined-social-symbol.png" alt="facebook">
+                <img class="footer_img" src="/img/07-footer/line-01.png" alt="line">
+                <img class="footer_img" src="/img/07-footer/twitter-circular-button.png" alt="twitter">
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+
+    <script>
+        // card
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                460: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+            }
+        });
+    </script>
+
+    <script>
+        // LOGO消失
+        $(window).scroll(function () {
+            // 宣告
+            var scrollTop = $(window).scrollTop();
+            var w = $(window).width();
+            console.log("#logo");
+            if (w > 460) {
+                if (scrollTop > 500) {
+                    $('#logo').hide();
+                } else {
+                    $('#logo').show();
+                }
+            } else {
+                if (scrollTop > 200) {
+                    $('#logo').hide();
+                } else {
+                    $('#logo').show();
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // QA
+        $('.collapse').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    </script>
+</body>
+
 </html>
