@@ -343,9 +343,20 @@
             e.preventDefault();
             $(this).toggleClass('active');
         });
-        $(".menu_top").click(function(){
+
+        // 電腦與手機的按鈕
+        var window_w = $(window).width();
+        if(window_w > 520){
+            $(".menu_top").hover(function(){
             $(".menu_top_ul").toggleClass("open");
         });
+        }else{
+            $(".menu_top").click(function(){
+            $(".menu_top_ul").toggleClass("open");
+        });
+        }
+        
+        
     </script>
 </body>
 
