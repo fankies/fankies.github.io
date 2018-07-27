@@ -47,22 +47,29 @@ nav {
     opacity: 0.8;
     position: absolute;
     top: 60px;
-    width: 120px;
+    width: 130px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     border-radius: 5px;
     display: none;
 }
+.menu_top_ul_li_1{
+    height: 50px;
+    line-height: 50px;
+}
 
 .menu_top_ul>li {
     font-size: 16px;
     color: #FFF;
     padding: 2px 5px;
+    text-shadow: 2px 2px #043F54;
 }
 
 .menu_top_ul_li {
     border-top: 1px solid white;
+    height: 50px;  
+    line-height: 50px;
 }
 
 .menu_top_ul_li_1>a {
@@ -75,22 +82,22 @@ nav {
 
 .menu_top_ul_li_padding1 {
     color: white;
-    padding-right: 45px;
+    padding: 18px 38px 18px 5px;
 }
 
 .menu_top_ul_li_padding2 {
     color: white;
-    padding-right: 45px;
+    padding: 18px 38px 18px 5px;
 }
 
 .menu_top_ul_li_padding3 {
     color: white;
-    padding-right: 30px;
+    padding: 18px 20px 18px 5px;
 }
 
 .menu_top_ul_li_padding4 {
     color: white;
-    padding-right: 5px;
+    padding: 18px 5px 18px 5px;
 }
 
 .logo {
@@ -158,15 +165,13 @@ nav {
     width: calc((100% - 30px)/2);
     float: left;
     color: #FFF;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 .story_title {
     margin-top: 0;
-}
-
-.story_content {
-    letter-spacing: 2px;
-    line-height: 20px;
 }
 
 .clear {
@@ -250,6 +255,12 @@ nav {
     margin-top: 25px;
 }
 
+.article_L_text >p {
+    line-height: 25px;
+    letter-spacing:1px;
+    text-align: justify;
+}
+
 .article_L_img {
     background-image: url("../img/05-section_3/使用心得-1.jpg");
     width: calc((100% - 10px)/2.5);
@@ -269,6 +280,12 @@ nav {
     margin-top: 25px;
 }
 
+.article_R_text >p {
+    line-height: 25px;
+    letter-spacing:1px;
+    text-align: justify;
+}
+
 .article_R_img {
     background-image: url("../img/05-section_3/使用心得-2.jpg");
     width: calc((100% - 10px)/2.5);
@@ -283,15 +300,19 @@ nav {
 .QA_title {
     text-align: center;
     margin: 0 auto 30px auto;
-    color: #06669A;
 }
 
 .wrap {
-    background-color: #06669A;
+    background-color: #888;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 30px;
     float: left;
+}
+
+.collapse > p {
+    padding: 0 20px 0 20px;
+    letter-spacing:2px;
 }
 
 .collapse {
@@ -326,7 +347,9 @@ nav {
 .collapse h2 {
     font-size: 18px;
     line-height: 20px;
-    position: relative
+    position: relative;
+    text-align: center;
+    letter-spacing:2px;
 }
 
 .transparent {
@@ -363,15 +386,16 @@ nav {
 /* footer */
 
 .footer {
-    background-color: #AAA;
+    background-color: #06669A;
     width: 100%;
     float: left;
+    position: relative;
 }
 
 .footer_float {
     float: left;
-    padding: 30px 50px;
-    color: #444;
+    padding: 30px 50px 30px 0;
+    color: #FFF;
 }
 
 .footer_img {
@@ -383,7 +407,13 @@ nav {
 
 .Q_A_a {
     display: block;
-    color: #444;
+    color: #FFF;
+}
+
+.footer_4{
+    position: absolute;
+    right: 16%;
+    bottom: 0;
 }
 
 /* RWD的世界來了~~~冏 */
@@ -394,9 +424,16 @@ nav {
     }
     .film {
         margin: 0;
+        width: 100%;
+        height: 500px;
     }
     .footer_float {
-        padding: 30px 40px;
+        padding: 30px 50px 30px 0;
+    }
+
+    .footer_4 > img {
+        width: 150px;
+        height: 28px;
     }
 }
 
