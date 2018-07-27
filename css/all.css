@@ -510,7 +510,7 @@ nav {
         margin: 0 0 25px 0;
     }
     .article_R_img {
-        margin: 140px 0 25px 0;
+        margin: 160px 0 25px 0;
         width: 100%;
     }
     /* QA */
@@ -521,5 +521,9 @@ nav {
     /* footer */
     .footer_float {
         padding: 0 15px 15px 0;
+    }
+
+    .footer_4 > img{
+        display:none;
     }
 }
